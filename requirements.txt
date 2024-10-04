@@ -1,0 +1,12 @@
+htop
+tree
+tmux
+vim
+git
+curl
+wget
+jq
+ncdu
+nmap
+fzf
+ripgrep

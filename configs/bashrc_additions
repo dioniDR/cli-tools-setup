@@ -1,0 +1,18 @@
+# Alias útiles
+alias update='sudo apt update && sudo apt upgrade'
+alias install='sudo apt install'
+alias search='apt search'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Mejora el prompt
+export PS1="\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]:\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+
+# Configuración de history
+HISTSIZE=10000
+HISTFILESIZE=20000
+HISTCONTROL=ignoreboth
+
+# Habilitar fzf si está instalado
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
